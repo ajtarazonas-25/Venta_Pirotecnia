@@ -10,7 +10,7 @@ const CATEGORIAS = [
     desc: "Fuentes de chispas que se elevan desde el suelo. Ideales para fiestas y fotos.",
     productos: [
       { id: "v1", nombre: "Volcán Mini", precio: 6000, desc: "30 s de chispa dorada." },
-      { id: "v2", nombre: "Volcán Dorado", precio: 12000, desc: "45 s, hasta 3 m de altura.", destacado: true },
+      { id: "v2", nombre: "Volcán Importado '7'", precio: 20000, desc: "60 s, hasta 3 m de altura, con cracker al final", img: "assets/volcan.jpeg", destacado: true, },
       { id: "v3", nombre: "Volcán Arcoíris", precio: 18000, desc: "Cambia de color en cada fase." },
       { id: "v4", nombre: "Volcán Gigante", precio: 35000, desc: "90 s de efecto continuo." },
     ]},
@@ -18,7 +18,7 @@ const CATEGORIAS = [
     desc: "Disparos múltiples en secuencia con efectos de gran altura.",
     productos: [
       { id: "b1", nombre: "Batería 25 tiros", precio: 45000, desc: "Peonías y cometas." },
-      { id: "b2", nombre: "Batería 49 tiros", precio: 85000, desc: "Mezcla de colores con estallido final.", destacado: true },
+      { id: "b2", nombre: "Torta 16 tiros 0.8", precio: 50000, desc: "Estallidos de colores con crisantemo y cracker.", img: "assets/torta 16.jfif", destacado: true },
       { id: "b3", nombre: "Batería 100 tiros", precio: 160000, desc: "Show de más de un minuto." },
       { id: "b4", nombre: "Batería Cascada", precio: 120000, desc: "Efecto cascada plateada." },
     ]},
@@ -27,13 +27,13 @@ const CATEGORIAS = [
     productos: [
       { id: "c1", nombre: "Cohete Silbador (6 und)", precio: 9000, desc: "Silbido y luz roja." },
       { id: "c2", nombre: "Cohete Trueno (6 und)", precio: 14000, desc: "Estallido sonoro al final." },
-      { id: "c3", nombre: "Cohete Estrella (12 und)", precio: 26000, desc: "Final con estrellas de colores.", destacado: true },
+      { id: "c3", nombre: "Chispitas Mariposas x 12", precio: 25000, desc: "Perfectas para iluminar momentos inolvidables en tus fiestas.", img: "assets/chispitas.jfif", destacado: true },
     ]},
   { id: "bengalas", nombre: "Bengalas", icono: "✨", g: ["#ffc83d", "#6b2a00"],
     desc: "Para llevar en la mano de forma segura con guantes. Perfectas para bodas y cumpleaños.",
     productos: [
       { id: "g1", nombre: "Bengala 20 cm (caja x10)", precio: 8000, desc: "Chispa blanca, 40 s." },
-      { id: "g2", nombre: "Bengala 40 cm (caja x10)", precio: 15000, desc: "Chispa dorada, 90 s.", destacado: true },
+      { id: "g2", nombre: "Cohetico Lunar", precio: 45000, desc: "Sube, silva y estalla! El cohete que llena de sonido y emoción cualquier celebración.", img: "assets/cohetico.jfif", destacado: true },
       { id: "g3", nombre: "Bengala de colores (x6)", precio: 12000, desc: "Rojo, verde y azul." },
     ]},
   { id: "fuentes", nombre: "Fuentes y ruedas", icono: "🎇", g: ["#a23bff", "#16083a"],
@@ -46,7 +46,7 @@ const CATEGORIAS = [
   { id: "kits", nombre: "Kits surtidos", icono: "🎁", g: ["#ff6a1a", "#a23bff"],
     desc: "Combos listos para celebrar, con ahorro frente a la compra suelta.",
     productos: [
-      { id: "k1", nombre: "Kit Familiar", precio: 55000, desc: "Volcanes, bengalas y fuentes.", destacado: true },
+      { id: "k1", nombre: "UFOS Voladores x 12", precio: 42000, desc: "Un espectáculo giratorio que se eleva como un verdadero ovni.", img: "assets/UFO.jfif", destacado: true },
       { id: "k2", nombre: "Kit Fiesta", precio: 130000, desc: "Baterías y cohetes para 15 min." },
       { id: "k3", nombre: "Kit Año Nuevo", precio: 250000, desc: "Show completo con 3 baterías." },
     ]},
@@ -62,7 +62,7 @@ const buscar = (id) => todos.find((p) => p.id === id);
 function cardProducto(p) {
   const [g1, g2] = p.cat.g;
   return `<article class="card">
-    <div class="thumb" style="--g1:${g1};--g2:${g2}">${p.cat.icono}${p.destacado ? '<span class="badge">Destacado</span>' : ""}</div>
+   <div class="thumb" style="--g1:${g1};--g2:${g2}">${p.img ? `<img src="${p.img}" alt="${p.nombre}" loading="lazy">` : p.cat.icono}${p.destacado ? '<span class="badge">Destacado</span>' : ""}</div>
     <div class="card-body">
       <h3>${p.nombre}</h3><p>${p.desc}</p>
       <div class="card-actions"><span class="price">${fmt(p.precio)}</span>
