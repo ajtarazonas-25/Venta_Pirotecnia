@@ -620,4 +620,3 @@ button{
     bottom:14px
   }
 }
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
