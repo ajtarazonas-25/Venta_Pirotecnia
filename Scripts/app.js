@@ -11,7 +11,7 @@ const CATEGORIAS = [
     productos: [
       { id: "v1", nombre: "Volcán Mini", precio: 3000, desc: "Fuente dorada de 2 metros de altura.", img: "assets/volcancito.jfif" },
       { id: "v2", nombre: "Volcán Importado '7'", precio: 20000, desc: "60 s, hasta 3 m de altura, con cracker al final", img: "assets/volcan.jpeg", destacado: true, },
-      { id: "v3", nombre: "Volcán Mini Pajaro loco", precio: 5000, desc: "Fuente de colores y silvidos.", img: "assets/pajaroloco.jfif" },
+      { id: "v3", nombre: "Volcán Mini Pajaro loco", precio: 5000, desc: "Fuente de colores y silvidos.", img: "assets/pajaroLoco.jfif" },
       { id: "v4", nombre: "Volcán Gigante", precio: 35000, desc: "90 s de efecto continuo." },
     ]},
   { id: "tortas", nombre: "Tortas", icono: "🎆", img: "assets/tortas_ref.jfif", g: ["#050505", "#3b1a78"],
