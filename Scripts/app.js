@@ -1,12 +1,12 @@
 /* ====== CONFIGURACIÓN ====== */
 // Cambia por tu número con indicativo de país, sin + ni espacios (Colombia = 57)
-const WHATSAPP = "573000000000";
-const NEGOCIO = "Chispa Real";
+const WHATSAPP = "573108473160";
+const NEGOCIO = "Pirotecnia A.J.";
 
 /* ====== DATOS ====== */
 // Cada referencia agrupa sus productos. destacado:true los muestra en la portada.
 const CATEGORIAS = [
-  { id: "volcanes", nombre: "Volcanes", icono: "🌋", g: ["#ff6a1a", "#7a0f1e"],
+  { id: "volcanes", nombre: "Volcanes", icono: "🌋", img: "assets/volcan_referencia.jfif", g: ["#ff6a1a", "#7a0f1e"],
     desc: "Fuentes de chispas que se elevan desde el suelo. Ideales para fiestas y fotos.",
     productos: [
       { id: "v1", nombre: "Volcán Mini", precio: 3000, desc: "30 s de chispa dorada.", img: "assets/volcancito.jfif" },
@@ -14,11 +14,11 @@ const CATEGORIAS = [
       { id: "v3", nombre: "Volcán Mini Pajaro loco", precio: 5000, desc: "Cambia de color en cada fase.", img: "assets/pajaroloco.jfif" },
       { id: "v4", nombre: "Volcán Gigante", precio: 35000, desc: "90 s de efecto continuo." },
     ]},
-  { id: "tortas", nombre: "Tortas", icono: "🎆", g: ["#2fa8ff", "#3b1a78"],
+  { id: "tortas", nombre: "Tortas", icono: "🎆", img: "assets/tortas_ref.jfif", g: ["#2fa8ff", "#3b1a78"],
     desc: "Disparos múltiples en secuencia con efectos de gran altura.",
     productos: [
       
-      { id: "b2", nombre: "Torta 16 tiros 0.6", precio: 40000, desc: "Show de más de un minuto." },
+      { id: "b2", nombre: "Torta 16 tiros 0.6", precio: 40000, desc: "Show de más de un minuto.", img: "assets/torta_16_0.6.jfif" },
       { id: "b1", nombre: "Torta 16 tiros 0.8", precio: 50000, desc: "Estallidos de colores con crisantemo y cracker.", img: "assets/torta 16.jfif", destacado: true },
       { id: "b3", nombre: "Torta 19 tiros Rey Escorpión", precio: 60000, desc: "Show de más de un minuto.", img: "assets/rey_escorpion.jfif" },
       { id: "b4", nombre: "Torta 19 tiros Anubis", precio: 60000, desc: "Show de más de un minuto.", img: "assets/anubis.jfif" },
@@ -28,17 +28,17 @@ const CATEGORIAS = [
       { id: "b8", nombre: "Torta 100 tiros Primavera", precio: 210000, desc: "Show de más de un minuto.", img: "assets/torta 100.jfif" },
      
     ]},
-  { id: "voladores", nombre: "Voladores", icono: "🚀", g: ["#e5173f", "#4a0a2e"],
+  { id: "voladores", nombre: "Voladores", icono: "🚀", img: "assets/voladores_ref.jfif", g: ["#e5173f", "#4a0a2e"],
     desc: "Se elevan con silbido y terminan en estallido de luz.",
     productos: [
-      { id: "c1", nombre: "UFOS Voladores x 12", precio: 42000, desc: "Un espectáculo giratorio que se eleva como un verdadero ovni.", img: "assets/UFO.jfif", destacado: true },
-      { id: "c2", nombre: "Sextos x docena", precio: 26000, desc: "Silbido y luz roja.", img: "assets/sextos.jfif" },
+      { id: "c1", nombre: "UFOS Voladores x 12", precio: 42000, desc: "Un espectáculo giratorio que se eleva como un verdadero ovni.", img: "assets/UFO.jfif" },
+      { id: "c2", nombre: "Sextos x docena", precio: 26000, desc: "Silbido y luz roja.", img: "assets/sextos.jfif", destacado: true },
       { id: "c3", nombre: "Misil x 25", precio: 10000, desc: "Silbido y luz roja.", img: "assets/misil 25.jfif" },
       { id: "c4", nombre: "Bazuca 300 tiros", precio: 150000, desc: "Silbido y luz roja.", img: "assets/bazuca.jfif" },
       { id: "c5", nombre: "Handleles", precio: 5000, desc: "Silbido y luz roja.", img: "assets/handleles.jfif" },
       { id: "c6", nombre: "Cohetico Lunar", precio: 45000, desc: "Sube, silva y estalla! El cohete que llena de sonido y emoción cualquier celebración.", img: "assets/cohetico.jfif", destacado: true },
     ]},
-  { id: "velas", nombre: "Velas crackers", icono: "✨", g: ["#ffc83d", "#6b2a00"],
+  { id: "velas", nombre: "Velas crackers", icono: "✨", img: "assets/velas_ref.jfif",g: ["#ffc83d", "#6b2a00"],
     desc: "Para llevar en la mano de forma segura con guantes. Perfectas para bodas y cumpleaños.",
     productos: [
       { id: "g1", nombre: "Tubo cracker x 10 tiros", precio: 5000, desc: "Chispa blanca, 40 s.", img: "assets/tubo 10.jfif" },
@@ -47,8 +47,8 @@ const CATEGORIAS = [
       { id: "g4", nombre: "Tubo cracker x 25 tiros", precio: 12000, desc: "Rojo, verde y azul.", img: "assets/tubo x 25.jfif" },
       { id: "g5", nombre: "Tubo cracker x 30 tiros", precio: 15000, desc: "Rojo, verde y azul.", img: "assets/tubox30.jfif" },
     ]},
-  { id: "polvora", nombre: "Polvora Negra", icono: "🎇", g: ["#a23bff", "#16083a"],
-    desc: "Efectos giratorios y fuentes de luz para el piso.",
+  { id: "polvora", nombre: "Polvora Negra", icono: "🎇", img: "assets/negra_ref.jfif",g: ["#a23bff", "#16083a"],
+    desc: "Efecto explosivo en el piso.",
     productos: [
       { id: "f1", nombre: "Triángulo Grande", precio: 700, desc: "Gira con chispas de colores." },
       { id: "f2", nombre: "Triángulo Mediano", precio: 500, desc: "Chorro plateado de 2 m.", img: "assets/triangulo m.jfif" },
@@ -57,8 +57,8 @@ const CATEGORIAS = [
       { id: "f5", nombre: "Tumbarranchitos", precio: 200, desc: "5 colores en secuencia.", img: "assets/tumbarranchitos.jfif" },
       { id: "f6", nombre: "Matasuegras", precio: 5000, desc: "5 colores en secuencia.", img: "assets/matasuegra.jfif" },
     ]},
-  { id: "jugueteria", nombre: "Jugueteria", icono: "🎁", g: ["#ff6a1a", "#a23bff"],
-    desc: "Combos listos para celebrar, con ahorro frente a la compra suelta.",
+  { id: "jugueteria", nombre: "Jugueteria", icono: "🎁", img: "assets/jugueteria_ref.jfif",g: ["#ff6a1a", "#a23bff"],
+    desc: "Productoslistos para celebrar y divertirse con seguridad.",
     productos: [
       
       { id: "k1", nombre: "Super Barril cracker", precio: 6000, desc: "Baterías y cohetes para 15 min.", img: "assets/barril.jfif" },
@@ -71,7 +71,7 @@ const CATEGORIAS = [
       { id: "k8", nombre: "tote 1 golpe x 40", precio: 4500, desc: "Show completo con 3 baterías.", img: "assets/tote 1.jfif" },
       { id: "k9", nombre: "tote 2 golpe x 20", precio: 4000, desc: "Show completo con 3 baterías.", img: "assets/tote 2.jfif" },
       { id: "k10", nombre: "tote 3 golpe x 20", precio: 5000, desc: "Show completo con 3 baterías.", img: "assets/tote 3.jfif" },
-      { id: "k11", nombre: "tote 4 golpe x 6", precio: 3000, desc: "Show completo con 3 baterías.", img: "assets/4 golpe.jfif" },
+      { id: "k11", nombre: "tote 4 golpe x 6", precio: 3000, desc: "Show completo con 3 baterías.", img: "assets/4golpes.jfif" },
       { id: "k12", nombre: "Bola Packman", precio: 4000, desc: "Show completo con 3 baterías.", img: "assets/packman.jfif" },
       { id: "k13", nombre: "Chispitas Mariposas x 12", precio: 25000, desc: "Perfectas para iluminar momentos inolvidables en tus fiestas.", img: "assets/chispitas.jfif", destacado: true },
     ]},
@@ -99,7 +99,7 @@ function renderHome() {
   $("#featuredGrid").innerHTML = todos.filter((p) => p.destacado).map(cardProducto).join("");
   $("#catGrid").innerHTML = CATEGORIAS.map((c) => `
     <article class="card cat-card" data-cat="${c.id}" tabindex="0" role="button" aria-label="Ver ${c.nombre}">
-      <div class="thumb" style="--g1:${c.g[0]};--g2:${c.g[1]}">${c.icono}</div>
+      <div class="thumb" style="--g1:${c.g[0]};--g2:${c.g[1]}">${c.img ? `<img src="${c.img}" alt="${c.nombre}" loading="lazy">` : c.icono}</div>
       <div class="card-body"><h3>${c.nombre}</h3>
       <p>${c.desc}</p><span class="count">${c.productos.length} productos</span></div>
     </article>`).join("");
