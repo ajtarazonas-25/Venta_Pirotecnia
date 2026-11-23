@@ -25,7 +25,7 @@ const CATEGORIAS = [
       { id: "b5", nombre: "Torta 19 tiros Anubis", precio: 60000, desc: "19 Tiros de colores y diversión con cracker.", img: "assets/anubis.jfif" },
       { id: "b6", nombre: "Torta 25 tiros Sinfonia", precio: 70000, desc: "Peonías, cracker y crisantemos llenos de colores.", img: "assets/sinfonia 25.jfif" },
       { id: "b7", nombre: "Torta 25 tiros Calgari", precio: 70000, desc: "Peonías, cracker y crisantemos llenos de colores.", img: "assets/calgari.jfif" },
-      { id: "b8", nombre: "Torta 36 tiros Hercules", precio: 90000, desc: "36 Potentes efectos luminosos y coloridos al cielo.", img: "assets/torta 36.jfif" },
+      { id: "b8", nombre: "Torta 36 tiros Hércules", precio: 90000, desc: "36 Potentes efectos luminosos y coloridos al cielo.", img: "assets/torta 36.jfif" },
       { id: "b9", nombre: "Torta 100 tiros Primavera", precio: 210000, desc: "Un show nocturno inolvidable para disfrutar al aire libre.", img: "assets/torta 100.jfif" },
       { id: "b10", nombre: "Torta 100 tiros Invierno", precio: 210000, desc: "Un show nocturno inolvidable para disfrutar al aire libre.", img: "assets/torta 100 invierno.jfif"}
     ]},
@@ -72,12 +72,11 @@ const CATEGORIAS = [
       { id: "k7", nombre: "Rosita China", precio: 1200, desc: "Gira como un trompo mostrando luces y termina con cracker.", img: "assets/rosita.jfif" },
       { id: "k8", nombre: "tote 1 golpe x 40", precio: 4500, desc: "Raspalos en la caja y mira como explota 1 veces.", img: "assets/mini fo 1.jfif" },
       { id: "k9", nombre: "tote 2 golpe x 20", precio: 4000, desc: "Raspalos en la caja y mira como explota 2 veces.", img: "assets/mini fo 2.jfif" },
-      { id: "k10", nombre: "tote 3 golpe x 20", precio: 5000, desc: "Raspalos en la caja y mira como explota 3 veces.", img: "assets/mini fo 3.jfif" },
-      { id: "k11", nombre: "tote 4 golpe x 6", precio: 3000, desc: "Raspalos en la caja y mira como explota 4 veces.", img: "assets/4golpes.jfif" },
-      { id: "k12", nombre: "Bola Packman", precio: 4000, desc: "Explota de forma amplia con cracker y luces doradas.", img: "assets/packman.jfif" },
-      { id: "k13", nombre: "Chispitas Mariposas ", precio: 2500, desc: "Bengalitas de luces en forma de estrellitas.", img: "assets/chispitas.jfif", destacado: true },
-      { id: "k14", nombre: "Super Torpedos x 20", precio: 6500, desc: "Tiralo contra el suelo y escucha el estallido.", img: "assets/super torpedo.jfif" },
-      { id: "k15", nombre: "Metralleta x 16 tiros", precio: 2000, desc: "16 Disparos llenos de diversion y alegria.", img: "assets/metralleta.jfif" }
+      { id: "k10", nombre: "tote 4 golpe x 6", precio: 3000, desc: "Raspalos en la caja y mira como explota 4 veces.", img: "assets/4golpes.jfif" },
+      { id: "k11", nombre: "Bola Packman", precio: 4000, desc: "Explota de forma amplia con cracker y luces doradas.", img: "assets/packman.jfif" },
+      { id: "k12", nombre: "Chispitas Mariposas ", precio: 2500, desc: "Bengalitas de luces en forma de estrellitas.", img: "assets/chispitas.jfif", destacado: true },
+      { id: "k13", nombre: "Super Torpedos x 20", precio: 5000, desc: "Tiralo contra el suelo y escucha el estallido.", img: "assets/super torpedo.jfif" },
+      { id: "k14", nombre: "Metralleta x 16 tiros", precio: 2000, desc: "16 Disparos llenos de diversion y alegria.", img: "assets/metralleta.jfif" }
     ]},
 ];
 
